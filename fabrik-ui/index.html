@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Fabrik 3D Gallery</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <div class="logo">
+          <img
+            src="https://vark.fbrk.in/assets/images/fabrik_full_logo.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="contentsbar">
+          <h2>Upload your 3D assets</h2>
+          <input accept=".glb, .gltf, .fbx" type="file" id="fileInput" class="upload-button" />
+          <button onclick="uploadFile()" class="upload-button">Upload!</button>
+          <h2 class="files-list">Assets Library</h1>
+          <div id="filesList">
+            <h1></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
